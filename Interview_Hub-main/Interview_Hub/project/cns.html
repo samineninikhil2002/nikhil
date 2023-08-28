@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam with Score</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>C language</h1>
+        <form id="examForm">
+            <div class="question">
+                <p>1.What will this program print?</p>
+                <pre><code>
+
+                    main()  
+                    {  
+                      int i = 2;  
+                      {  
+                        int i = 4, j = 5;  
+                         printf("%d %d", i, j);  
+                      }    
+                      printf("%d %d", i, j);  
+                    } </code> </pre>
+                <label><input type="radio" name="q1" value=" 4525">  4525</label>
+                <label><input type="radio" name="q1" value="2525"> 2525</label>
+                <label><input type="radio" name="q1" value="4545"> 4545</label>
+                <label><input type="radio" name="q1" value="None of the Above"> None of the Above</label>
+            </div>
+            <div class="question">
+                <p>2. Study the following program:</p>
+                <pre><code>
+
+                    main()  
+                    {  
+                       char x [10], *ptr = x;  
+                      scanf ("%s", x);  
+                      change(&x[4]);  
+                    }  
+                     change(char a[])  
+                     {  
+                       puts(a);  
+                     }  
+                    If abcdefg is the input, the output will be </code></pre>
+                <label><input type="radio" name="q2" value="abcd">abcd</label>
+                <label><input type="radio" name="q2" value="abc">abc</label>
+                <label><input type="radio" name="q2" value="efg"> efg</label>
+                <label><input type="radio" name="q2" value="efg"> Garbage</label>
+            </div>
+            <div class="question">
+                <p>3. Study the following program:</p>
+                <pre><code>
+
+                    main()  
+                    {  
+                      int a = 1, b = 2, c = 3:  
+                      printf("%d", a + = (a + = 3, 5, a))  
+                    }  
+                </code></pre>
+                    <p>What will be the output of this program?</p>
+                <label><input type="radio" name="q3" value=" 6">  6<label>
+                <label><input type="radio" name="q3" value="9"> 9</label>
+                <label><input type="radio" name="q3" value="12">12</label>
+                <label><input type="radio" name="q3" value="8">8</label>
+            </div>
+            <div class="question">
+                <p>4.What does this declaration mean?</p>
+                <pre><code>
+                    int x : 4;  </code></pre>
+                <label><input type="radio" name="q4" value="X is a four-digit integer."> X is a four-digit integer.</label>
+                <label><input type="radio" name="q4" value="X cannot be greater than a four-digit integer.">  X cannot be greater than a four-digit integer.</label>
+                <label><input type="radio" name="q4" value="X is a four-bit integer.">X is a four-bit integer.</label>
+                <label><input type="radio" name="q4" value="None of the these ">None of the these </label>
+            <div class="question">
+                <p>5. How many times will the following loop execute?</p>
+                <pre><code>
+
+                    for(j = 1; j <= 10; j = j-1)</code></pre>
+                <label><input type="radio" name="q5" value="forever">forever</label>
+                <label><input type="radio" name="q5" value="Never"> Never</label>
+                <label><input type="radio" name="q5" value="0"> 0</label>
+                <label><input type="radio" name="q5" value="0"> 1</label>
+            </div>
+            <div class="question">
+                <p>6. What is the result after execution of the following code if a is 10, b is 5, and c is 10?</p>
+                <pre><code>
+
+                    If ((a > b) && (a <= c))  
+                            a = a + 1;  
+                    else  
+                            c = c+1; </code> </pre>
+                <label><input type="radio" name="q6" value="a = 10, c = 10"> a = 10, c = 10</label>
+                <label><input type="radio" name="q6" value="a = 11, c = 10"> a = 11, c = 10</label>
+                <label><input type="radio" name="q6" value="a = 10, c = 11"> a = 10, c = 11</label>
+                <label><input type="radio" name="q5" value="a = 11, c = 11"> a = 11, c = 11</label>
+            </div>
+            <div class="question">
+                <p>7. What will the result of num1 variable after execution of the following statements?</p>
+                <pre><code>
+                    int j = 1, num1 = 4;  
+                    while (++j <= 10)  
+                    {  
+                      num1++;  
+                    } </code> </pre>
+                <label><input type="radio" name="q7" value="11"> 11</label>
+                <label><input type="radio" name="q7" value="12">12 </label>
+                <label><input type="radio" name="q7" value="13">13</label>
+                <label><input type="radio" name="q5" value="14"> 14</label>
+            </div>
+            <div class="question">
+                <p>8.  What will the result of len variable after execution of the following statements?</p>
+                <pre><code>
+
+                    int len;  
+                    char str1[] = {"39 march road"};  
+                    len = strlen(str1); </code> </pre>
+                <label><input type="radio" name="q8" value="11"> 11</label>
+                <label><input type="radio" name="q8" value="12"> 12</label>
+                <label><input type="radio" name="q8" value="13">13</label>
+                <label><input type="radio" name="q5" value="14"> 14</label>
+            </div>
+            <div class="question">
+                <p>9. Study the following statement</p>
+                <pre><code>
+
+                    #include <stdio.h>  
+                        int main()  
+                        {  
+                            int *ptr, a = 10;  
+                            ptr = &a;  
+                            *ptr += 1;  
+                            printf("%d,%d/n", *ptr, a);  
+                        } 
+                    </code></pre>
+                    <p>What will be the output?</p>
+                <label><input type="radio" name="q9" value="10, 10">10, 10</label>
+                <label><input type="radio" name="q9" value="10, 11"> 10, 11</label>
+                <label><input type="radio" name="q9" value="11, 10">11, 10</label>
+                <label><input type="radio" name="q5" value="11, 11"> 11, 11</label>
+            </div>
+            <div class="question">
+                <p>10. Given the following statement, what will be displayed on the screen?</p>
+                <pre><code>
+
+                    int * aPtr;  
+                    *aPtr = 100;  
+                    cout << *aPtr + 2;</code></pre>
+                <label><input type="radio" name="q10" value="100">100</label>
+                <label><input type="radio" name="q10" value="102"> 102</label>
+                <label><input type="radio" name="q10" value="104"> 104</label>
+                <label><input type="radio" name="q5" value="108"> 108</label>
+            </div>
+            <!-- Add more questions here -->
+            <button type="button" id="submitBtn">Submit Exam</button>
+        </form>
+        <div Id="scoreContainer" style="display: none;">
+            <h2>Your Score:</h2>
+            <p id="score"></p>
+        </div>
+    </div>
+    <script src="cns.js"></script>
+</body>
+</html>
